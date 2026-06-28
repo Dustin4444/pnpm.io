@@ -1,6 +1,6 @@
 # Benchmarks of JavaScript Package Managers
 
-**Last benchmarked at**: _Jun 24, 2026, 2:35 PM_ (_daily_ updated).
+**Last benchmarked at**: _Jun 28, 2026, 4:31 AM_ (_daily_ updated).
 
 This benchmark compares the performance of npm, pnpm, Yarn Classic, and Yarn PnP (check [Yarn's benchmarks](https://yarnpkg.com/benchmarks) for any other Yarn modes that are not included here).
 
@@ -24,15 +24,15 @@ The app's `package.json` [here](https://github.com/pnpm/pnpm.io/blob/main/benchm
 | ---     | ---   | ---      | ---         | --- | --- | --- | --- | --- |
 | install |   |   |   | 25.2s | 7.1s | 2.2s | 7s | 2.7s |
 | install | ✔ |   |   | 10.7s | 4.3s | 1.3s | 7s | 2.3s |
-| install |   | ✔ |   | 9.8s | 5.6s | 1.8s | 5s | 1s |
-| install | ✔ | ✔ |   | 7s | 2.4s | 619ms | 5.4s | 1.1s |
-| install |   |   | ✔ | 1.3s | 476ms | 66ms | 6.3s | n/a |
-| install | ✔ |   | ✔ | 1.3s | 432ms | 890ms | 6.3s | n/a |
-| install |   | ✔ | ✔ | 1s | 400ms | 36ms | 4.6s | n/a |
-| install | ✔ | ✔ | ✔ | 1s | 394ms | 36ms | 4.5s | n/a |
-| update | n/a | n/a | n/a | 5.5s | 6.7s | 2s | 5.1s | 2.3s |
+| install |   | ✔ |   | 9.8s | 5.6s | 1.9s | 5s | 1s |
+| install | ✔ | ✔ |   | 7s | 2.4s | 615ms | 5.4s | 1.1s |
+| install |   |   | ✔ | 1.3s | 476ms | 78ms | 6.3s | n/a |
+| install | ✔ |   | ✔ | 1.3s | 432ms | 78ms | 6.3s | n/a |
+| install |   | ✔ | ✔ | 1s | 400ms | 92ms | 4.6s | n/a |
+| install | ✔ | ✔ | ✔ | 1s | 394ms | 42ms | 4.5s | n/a |
+| update | n/a | n/a | n/a | 5.5s | 6.7s | 2.1s | 5.1s | 2.3s |
 
-<img alt="Graph of the alotta-files results" src="/img/benchmarks/alotta-files.svg?v=6e8acaa9" />
+<img alt="Graph of the alotta-files results" src="/img/benchmarks/alotta-files.svg?v=dd42c238" />
 
 ### pnpm vs pnpm 🦀
 
@@ -41,13 +41,13 @@ pnpm v12 will use a new installation engine for fetching and linking written in 
 | action  | cache | lockfile | node_modules| pnpm | [pnpm 🦀](https://github.com/pnpm/pacquet) |
 | ---     | ---   | ---      | ---         | --- | --- |
 | install |   |   |   | 7.1s | 2.2s |
-| install |   | ✔ |   | 5.6s | 1.8s |
+| install |   | ✔ |   | 5.6s | 1.9s |
 | install | ✔ |   |   | 4.3s | 1.3s |
-| install | ✔ | ✔ |   | 2.4s | 619ms |
-| install |   |   | ✔ | 476ms | 66ms |
-| install | ✔ |   | ✔ | 432ms | 890ms |
-| install |   | ✔ | ✔ | 400ms | 36ms |
-| install | ✔ | ✔ | ✔ | 394ms | 36ms |
-| update | n/a | n/a | n/a | 6.7s | 2s |
+| install | ✔ | ✔ |   | 2.4s | 615ms |
+| install |   |   | ✔ | 476ms | 78ms |
+| install | ✔ |   | ✔ | 432ms | 78ms |
+| install |   | ✔ | ✔ | 400ms | 92ms |
+| install | ✔ | ✔ | ✔ | 394ms | 42ms |
+| update | n/a | n/a | n/a | 6.7s | 2.1s |
 
-<img alt="Graph comparing pnpm versions on the alotta-files fixture" src="/img/benchmarks/alotta-files-pnpm.svg?v=d8b4311f" />
+<img alt="Graph comparing pnpm versions on the alotta-files fixture" src="/img/benchmarks/alotta-files-pnpm.svg?v=8ef837d3" />
